@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		993EFB3E1BE34DB20005D13C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993EFB3D1BE34DB20005D13C /* AppDelegate.swift */; };
-		993EFB401BE34DB20005D13C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993EFB3F1BE34DB20005D13C /* ViewController.swift */; };
 		993EFB431BE34DB20005D13C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 993EFB411BE34DB20005D13C /* Main.storyboard */; };
 		993EFB461BE34DB20005D13C /* SoundExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 993EFB441BE34DB20005D13C /* SoundExample.xcdatamodeld */; };
 		993EFB481BE34DB20005D13C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 993EFB471BE34DB20005D13C /* Assets.xcassets */; };
 		993EFB4B1BE34DB20005D13C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 993EFB491BE34DB20005D13C /* LaunchScreen.storyboard */; };
 		993EFB561BE34DB20005D13C /* SoundExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993EFB551BE34DB20005D13C /* SoundExampleTests.swift */; };
 		993EFB611BE34DB20005D13C /* SoundExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993EFB601BE34DB20005D13C /* SoundExampleUITests.swift */; };
+		993EFB6F1BE34EA60005D13C /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993EFB6E1BE34EA60005D13C /* DashboardView.swift */; };
+		993EFB711BE34F0D0005D13C /* DashboardVC_Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993EFB701BE34F0D0005D13C /* DashboardVC_Main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,6 @@
 /* Begin PBXFileReference section */
 		993EFB3A1BE34DB20005D13C /* SoundExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		993EFB3D1BE34DB20005D13C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		993EFB3F1BE34DB20005D13C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		993EFB421BE34DB20005D13C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		993EFB451BE34DB20005D13C /* SoundExample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SoundExample.xcdatamodel; sourceTree = "<group>"; };
 		993EFB471BE34DB20005D13C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		993EFB5C1BE34DB20005D13C /* SoundExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		993EFB601BE34DB20005D13C /* SoundExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundExampleUITests.swift; sourceTree = "<group>"; };
 		993EFB621BE34DB20005D13C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		993EFB6E1BE34EA60005D13C /* DashboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		993EFB701BE34F0D0005D13C /* DashboardVC_Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardVC_Main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +101,9 @@
 		993EFB3C1BE34DB20005D13C /* SoundExample */ = {
 			isa = PBXGroup;
 			children = (
+				993EFB721BE34F150005D13C /* Classes */,
+				993EFB731BE34F210005D13C /* DashboardViewController */,
 				993EFB3D1BE34DB20005D13C /* AppDelegate.swift */,
-				993EFB3F1BE34DB20005D13C /* ViewController.swift */,
 				993EFB411BE34DB20005D13C /* Main.storyboard */,
 				993EFB471BE34DB20005D13C /* Assets.xcassets */,
 				993EFB491BE34DB20005D13C /* LaunchScreen.storyboard */,
@@ -126,6 +129,22 @@
 				993EFB621BE34DB20005D13C /* Info.plist */,
 			);
 			path = SoundExampleUITests;
+			sourceTree = "<group>";
+		};
+		993EFB721BE34F150005D13C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				993EFB6E1BE34EA60005D13C /* DashboardView.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		993EFB731BE34F210005D13C /* DashboardViewController */ = {
+			isa = PBXGroup;
+			children = (
+				993EFB701BE34F0D0005D13C /* DashboardVC_Main.swift */,
+			);
+			name = DashboardViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +215,7 @@
 				TargetAttributes = {
 					993EFB391BE34DB20005D13C = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = TRU3C74ZGR;
 					};
 					993EFB501BE34DB20005D13C = {
 						CreatedOnToolsVersion = 7.1;
@@ -259,8 +279,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				993EFB401BE34DB20005D13C /* ViewController.swift in Sources */,
+				993EFB6F1BE34EA60005D13C /* DashboardView.swift in Sources */,
 				993EFB3E1BE34DB20005D13C /* AppDelegate.swift in Sources */,
+				993EFB711BE34F0D0005D13C /* DashboardVC_Main.swift in Sources */,
 				993EFB461BE34DB20005D13C /* SoundExample.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,6 +422,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SoundExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.protogres.SoundExample;
@@ -412,6 +434,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SoundExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.protogres.SoundExample;
